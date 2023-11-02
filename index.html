@@ -4,44 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Noticias</title>
   </head>
   <body>
-    <h1 class="title">Alex News</h1>
     <header class="header">
-      <div class="buttons">
-        <button class="btnCategory" id="technology" value="technology">
-          Technology
-        </button>
-        <button class="btnCategory" id="business" value="business">
-          Business
-        </button>
-        <button class="btnCategory" id="sports" value="sports">Sports</button>
-        <button class="btnCategory" id="entertainment" value="entertainment">
-          Entertainment
-        </button>
-      </div>
-      <div class="search">
-        <input
-          class="searchInput"
-          type="text"
-          placeholder="Search Category"
-          id="searchInput"
-        />
-        <button class="btnSearch" id="searchBtn"><span class="material-symbols-outlined">
-search
-</span></button>
-      </div>
+      <h1 class="title">Alex News</h1>
+      <nav class="nav">
+        <div class="nav__links">
+          <button
+            class="nav__item nav__item-technology"
+            id="technology"
+            value="technology"
+          >
+            Technology
+          </button>
+          <button class="nav__item" id="business" value="business">
+            Business
+          </button>
+          <button class="nav__item" id="sports" value="sports">Sports</button>
+          <button class="nav__item" id="entertainment" value="entertainment">
+            Entertainment
+          </button>
+        </div>
+        <div class="search">
+          <span class="material-symbols-outlined"> search </span>
+          <input class="searchInput" type="text" id="searchInput" />
+        </div>
+        <div class="bars__menu">
+          <span class="line1__bars-menu"></span>
+          <span class="line2__bars-menu"></span>
+          <span class="line3__bars-menu"></span>
+        </div>
+      </nav>
     </header>
     <main>
-      
-        <div class="news">
-          
-        </div>
-        
-    
+      <div class="news"></div>
     </main>
     <footer></footer>
     <script src="app.js"></script>
